@@ -17,9 +17,10 @@ export class ProblemComponent implements OnInit {
   problem: Sum;
 
   correct: boolean = false;
+  operation: string;
 
   constructor() { 
-    this.problem = new Sum();
+    this.problem = new Sum("+");
   }
 
   ngOnInit() {
@@ -27,7 +28,12 @@ export class ProblemComponent implements OnInit {
 
   onCheck() {
     var answer = this.answerDigit1*1000 + this.answerDigit2*100 + this.answerDigit3*10 + this.answerDigit4*1; 
-    if (answer == this.problem.first + this.problem.second)
+    var expected = this.problem.first + this.problem.second;
+    if (this.operation == "-")
+    {
+      expected = this.problem.first - this.problem.second;
+    }
+    if (answer == expected)
     {      
       this.correct = true;
     }
@@ -35,6 +41,12 @@ export class ProblemComponent implements OnInit {
 
   onNew() {
     this.correct = false;
-    this.problem = new Sum();
+    this.problem = new Sum(this.operation);
   }
+
+  onChange(value:string) : void {    
+    this.operation = value;
+    this.problem = new Sum(this.operation);
+  }
+
 }
