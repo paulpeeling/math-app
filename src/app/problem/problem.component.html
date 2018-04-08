@@ -1,3 +1,30 @@
-<p>
-  problem works!
-</p>
+<div class="sum">
+<select class="sum"><option class="sum">{{ problem.first.toString()[0] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.first.toString()[1] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.first.toString()[2] }}</option></select>
+<br>
+<select class="sum"><option class="sum">+</option></select>
+<select class="sum"><option class="sum">{{ problem.second.toString()[0] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.second.toString()[1] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.second.toString()[2] }}</option></select>
+<br>
+<select class="sum"><option class="sum">=</option></select>
+<select class="sum" [(ngModel)]='answerDigit1'>
+  <option class="sum">0</option><option class="sum">1</option><option class="sum">2</option><option class="sum">3</option><option class="sum">4</option><option class="sum">5</option><option class="sum">6</option><option class="sum">7</option><option class="sum">8</option><option class="sum">9</option>
+</select>
+<select class="sum" [(ngModel)]='answerDigit2'>
+    <option class="sum">0</option><option class="sum">1</option><option class="sum">2</option><option class="sum">3</option><option class="sum">4</option><option class="sum">5</option><option class="sum">6</option><option class="sum">7</option><option class="sum">8</option><option class="sum">9</option>
+  </select>
+<select class="sum" [(ngModel)]='answerDigit3'>
+  <option class="sum">0</option><option class="sum">1</option><option class="sum">2</option><option class="sum">3</option><option class="sum">4</option><option class="sum">5</option><option class="sum">6</option><option class="sum">7</option><option class="sum">8</option><option class="sum">9</option>
+</select>
+<select class="sum" [(ngModel)]='answerDigit4'>
+    <option class="sum">0</option><option class="sum">1</option><option class="sum">2</option><option class="sum">3</option><option class="sum">4</option><option class="sum">5</option><option class="sum">6</option><option class="sum">7</option><option class="sum">8</option><option class="sum">9</option>
+  </select>
+<br>
+<br>
+</div>
+<div class="sum">
+<button [ngStyle]="{'background-color':correct ? '#58D68D':'#FCFCFC'}" class="sum" (click)="onCheck()">Check</button>
+<button class="sum" (click)="onNew()">New</button>
+</div>

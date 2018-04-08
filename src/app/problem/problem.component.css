@@ -1,0 +1,17 @@
+div.sum {
+    font-size: 72pt;
+    text-align: right;
+    font-family: monospace;
+}
+select.sum {
+    font-size: 72pt;
+    font-family: monospace;
+}
+option.sum {
+    font-size: 72pt;
+    font-family: monospace;
+}
+button.sum {
+    font-size: 72pt;
+    font-family: monospace;    
+}
