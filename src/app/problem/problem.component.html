@@ -1,12 +1,12 @@
 <div class="sum">
-<select class="sum"><option class="sum">{{ problem.first.toString()[0] }}</option></select>
-<select class="sum"><option class="sum">{{ problem.first.toString()[1] }}</option></select>
-<select class="sum"><option class="sum">{{ problem.first.toString()[2] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.first.toString().padStart(3,"0")[0] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.first.toString().padStart(3,"0")[1] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.first.toString().padStart(3,"0")[2] }}</option></select>
 <br>
 <select #operation class="sum" (change)="onChange(operation.value)"><option class="sum">+</option><option class="sum">-</option></select>
-<select class="sum"><option class="sum">{{ problem.second.toString()[0] }}</option></select>
-<select class="sum"><option class="sum">{{ problem.second.toString()[1] }}</option></select>
-<select class="sum"><option class="sum">{{ problem.second.toString()[2] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.second.toString().padStart(3,"0")[0] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.second.toString().padStart(3,"0")[1] }}</option></select>
+<select class="sum"><option class="sum">{{ problem.second.toString().padStart(3,"0")[2] }}</option></select>
 <br>
 <select class="sum"><option class="sum">=</option></select>
 <select class="sum" [(ngModel)]='answerDigit1'>
