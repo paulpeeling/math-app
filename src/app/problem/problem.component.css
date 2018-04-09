@@ -4,5 +4,6 @@ div select {
     font-family: monospace;
 }
 div button {
-    font-size: 36pt;
+    font-size: 18pt;
+    width: 95%;
 }
