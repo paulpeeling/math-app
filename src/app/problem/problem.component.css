@@ -1,17 +1,8 @@
-div.sum {
-    font-size: 48pt;
+div select {
+    font-size: 36pt;
     text-align: right;
     font-family: monospace;
 }
-select.sum {
-    font-size: 48pt;
-    font-family: monospace;
-}
-option.sum {
-    font-size: 48pt;
-    font-family: monospace;
-}
-button.sum {
-    font-size: 48pt;
-    font-family: monospace;    
+div button {
+    font-size: 36pt;
 }
