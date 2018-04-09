@@ -12,10 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-ng build --prod --base-href "https://paulpeeling.github.io/math-app/"
-ngh
+Run `npm run build` to build for production and publish to Github pages at [https://paulpeeling.github.io/math-app/](https://paulpeeling.github.io/math-app/)
 
 ## Running unit tests
 
