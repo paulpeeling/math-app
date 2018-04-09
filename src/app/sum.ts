@@ -1,9 +1,13 @@
 export class Sum {
+
     first: number;
     second: number;  
-    constructor(operation:string) {
-      this.first = Math.round(Math.random()*999);
-      this.second = Math.round(Math.random()*999);
+    
+    constructor(operation:string,upper:number,lower:number) {
+    
+      this.first = Math.round(Math.random()*(Math.pow(10,upper)-1));
+      this.second = Math.round(Math.random()*(Math.pow(10,lower)-1));
+    
       if (this.first < this.second)
       {
           if (operation == "-")
