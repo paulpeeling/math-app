@@ -44,8 +44,9 @@ export class ProblemComponent implements OnInit {
     this.problem = new Sum(this.operation);
   }
 
-  onChange(value:string) : void {    
+  onChange(value:string) : void {
     this.operation = value;
+    this.correct = false;
     this.problem = new Sum(this.operation);
   }
 
