@@ -1,9 +1,9 @@
 div select {
-    font-size: 36pt;
     text-align: right;
     font-family: monospace;
+    font-size: 10vw;
 }
 div button {
-    font-size: 18pt;
-    width: 95%;
+    font-size: 5vw;
+    width: 90%;
 }
